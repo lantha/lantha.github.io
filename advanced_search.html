@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Search</title>
+</head>
+<body>
+
+
+    <nav id="adv_search">
+        <ul>
+            <li><a href="index.html">Search</a></li>
+        </ul>
+    </nav>
+
+    <h3>Advanced Search</h3><hr/>
+    
+    <div class="adv_content">
+    <form action="https://www.google.com/search" method="get">
+
+        <div class="grid">
+            <div><p>Find pages with...</p></div>
+            <div><!-- Just some space filler - makes life easier? --></div>
+            <div class="message header"><p> To do this in the search box.</p></div>
+        </div>
+
+        <div class="grid">
+            <div class="label"><label for="all_words">all these words:</label></div>
+            <div><input type="text" name="as_q" id="all_words"></div>
+            <div class="message">Type the important words: html css javascript python</div>
+        </div>
+
+        <div class="grid">
+            <div class="label"><label for="exact_word">this exact word or phrase:</label></div>
+            <div><input type="text" name="as_epq" id="exact_word"></div>
+            <div class="message">Put exact words in quotes: "Django"</div>
+        </div>
+
+        <div class="grid">
+            <div class="label"><label for="any_word">any of these words:</label></div>
+            <div><input type="text" name="as_oq" id="any_word"></div>
+            <div class="message">Type OR between all the words you want:<br> django OR flask</div>
+        </div>
+
+        <div class="grid">
+            <div class="label"><label for="none">none of these words:</label></div>
+            <div><input type="text" name="as_eq" id="none"></div>
+            <div class="message">Put a minus sign just before words that you don't want:<br> -react -redux</div>
+        </div>
+
+        <div class="grid">
+            <div><!-- Just some space filler - makes life easier? --></div>
+            <div class="adv_button"><input type="submit" value="Advanced Search"></div>
+            <div><!-- Just some space filler - makes life easier? --></div>
+        </div>
+        
+    </form>
+</div>
+    
+</body>
+
+</html>
+
